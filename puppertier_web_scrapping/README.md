@@ -1,0 +1,1 @@
+Use Puppeteer to obtain all the requests from the website (https://www.smallbusinesscommissioner.gov.uk/blog/) by clicking all the "load more" buttons 
