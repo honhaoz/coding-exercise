@@ -1,0 +1,7 @@
+Sass installation: https://sass-lang.com/install/
+Basic SCSS: https://medium.com/swlh/learn-the-scss-sass-basics-in-5-minutes-73002653b443
+            https://sass-lang.com/guide/
+Intermediate SCSS: https://www.toptal.com/sass/theming-scss-tutorial
+
+Learn the basic, do some simple exercise, do a simple project, 
+gradually master it by doing more complex project while reading official docs

@@ -1,54 +1,111 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.theme-dark #theme-button {
+  position: absolute;
+  left: 60px;
+  top: 20px;
+  background-color: #fff;
+  color: #333;
+}
+.theme-dark header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.theme-dark .features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+.theme-dark .feature {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+.theme-dark #strategy {
+  background-color: #b3d4fc;
+}
+.theme-dark #analysis {
+  background-color: #fcd9b3;
+}
+.theme-dark #implementation {
+  background-color: #d4fcb3;
+}
+.theme-dark .contact {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+}
+.theme-dark footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.feature {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f4f4f4;
+.theme-light #theme-button {
+  position: absolute;
+  left: 60px;
+  top: 20px;
+  background-color: #333;
+  color: #fff;
+}
+.theme-light header {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+.theme-light .features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+.theme-light .feature {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+.theme-light #strategy {
+  background-color: #b3d4fc;
+}
+.theme-light #analysis {
+  background-color: #fcd9b3;
+}
+.theme-light #implementation {
+  background-color: #d4fcb3;
+}
+.theme-light .contact {
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  padding: 40px;
+}
+.theme-light footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-#strategy {
-    background-color: #b3d4fc;
-}
-
-#analysis {
-    background-color: #fcd9b3;
-}
-
-#implementation {
-    background-color: #d4fcb3;
-}
-
-.contact {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 40px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+/*# sourceMappingURL=styles.css.map */

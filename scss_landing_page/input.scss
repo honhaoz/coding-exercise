@@ -1,0 +1,69 @@
+
+@mixin themable($theme-name, $bg-font-color, $bg-color) {
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .#{$theme-name} {
+        #theme-button{
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            background-color:$bg-font-color;
+            color: $bg-color;
+        }
+        header {
+            background-color:  $bg-color;
+            color: $bg-font-color;
+            text-align: center;
+            padding: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+        
+        #strategy {
+            background-color: #b3d4fc;
+        }
+        
+        #analysis {
+            background-color: #fcd9b3;
+        }
+        
+        #implementation {
+            background-color: #d4fcb3;
+        }
+        
+        .contact {
+            text-align: center;
+            background-color:  $bg-color;
+            color: $bg-font-color;
+            padding: 40px;
+        }
+        
+        footer {
+            background-color:  $bg-color;
+            color: $bg-font-color;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+
+@include themable(theme-dark, #fff, #333);
+@include themable(theme-light, #333,#fff);
