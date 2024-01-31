@@ -6,6 +6,9 @@ $theme-dark: (
     theme-colors: (
         background-color: #333,
         color: #fff
+    ),
+    features: (
+        background-color: #f4f4f4
     )
 );
 $theme-light: (
@@ -16,6 +19,9 @@ $theme-light: (
     theme-colors: (
         background-color: #fff,
         color: #333
+    ),
+    features: (
+        background-color: #333
     )
 );
 @mixin themable($theme-name, $theme-map) {
@@ -44,7 +50,6 @@ $theme-light: (
             text-align: center;
             padding: 20px;
             border-radius: 10px;
-            background-color: #f4f4f4;
         }
 
         #strategy {
@@ -90,6 +95,11 @@ $theme-light: (
                 footer {
                     background-color: map-get($map, background-color);
                     color: map-get($map, color);
+                }
+            }
+            @if ($section == features) {
+                .features {
+                    background-color: map-get($map, background-color);
                 }
             }
         }

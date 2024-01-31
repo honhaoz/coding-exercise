@@ -22,7 +22,6 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f4f4f4;
 }
 .theme-dark #strategy {
   background-color: #b3d4fc;
@@ -60,6 +59,9 @@ body {
   background-color: #333;
   color: #fff;
 }
+.theme-dark .features {
+  background-color: #f4f4f4;
+}
 
 body {
   font-family: "Arial", sans-serif;
@@ -85,7 +87,6 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f4f4f4;
 }
 .theme-light #strategy {
   background-color: #b3d4fc;
@@ -122,6 +123,9 @@ body {
 .theme-light footer {
   background-color: #fff;
   color: #333;
+}
+.theme-light .features {
+  background-color: #333;
 }
 
 /*# sourceMappingURL=styles.css.map */
