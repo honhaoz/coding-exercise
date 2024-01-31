@@ -1,21 +1,36 @@
-
-@mixin themable($theme-name, $bg-font-color, $bg-color) {
+$theme-dark: (
+    theme-button: (
+        background-color: silver,
+        color: black
+    ),
+    theme-colors: (
+        background-color: #333,
+        color: #fff
+    )
+);
+$theme-light: (
+    theme-button: (
+        background-color: black,
+        color: silver
+    ),
+    theme-colors: (
+        background-color: #fff,
+        color: #333
+    )
+);
+@mixin themable($theme-name, $theme-map) {
     body {
-        font-family: 'Arial', sans-serif;
+        font-family: "Arial", sans-serif;
         margin: 0;
         padding: 0;
     }
     .#{$theme-name} {
-        #theme-button{
+        #theme-button {
             position: absolute;
             left: 60px;
             top: 20px;
-            background-color:$bg-font-color;
-            color: $bg-color;
         }
         header {
-            background-color:  $bg-color;
-            color: $bg-font-color;
             text-align: center;
             padding: 20px;
         }
@@ -24,46 +39,62 @@
             justify-content: space-around;
             padding: 40px;
         }
-        
+
         .feature {
             text-align: center;
             padding: 20px;
             border-radius: 10px;
             background-color: #f4f4f4;
         }
-        
+
         #strategy {
             background-color: #b3d4fc;
         }
-        
+
         #analysis {
             background-color: #fcd9b3;
         }
-        
+
         #implementation {
             background-color: #d4fcb3;
         }
-        
+
         .contact {
             text-align: center;
-            background-color:  $bg-color;
-            color: $bg-font-color;
             padding: 40px;
         }
-        
+
         footer {
-            background-color:  $bg-color;
-            color: $bg-font-color;
             text-align: center;
             padding: 10px;
             position: absolute;
             bottom: 0;
             width: 100%;
         }
+        @each $section, $map in $theme-map {
+            @if ($section == theme-button) {
+                #theme-button {
+                    background-color: map-get($map, background-color);
+                    color: map-get($map, color);
+                }
+            }
+            @if ($section == theme-colors) {
+                header {
+                    background-color: map-get($map, background-color);
+                    color: map-get($map, color);
+                }
+                .contact {
+                    background-color: map-get($map, background-color);
+                    color: map-get($map, color);
+                }
+                footer {
+                    background-color: map-get($map, background-color);
+                    color: map-get($map, color);
+                }
+            }
+        }
     }
 }
 
-
-
-@include themable(theme-dark, #fff, #333);
-@include themable(theme-light, #333,#fff);
+@include themable(theme-dark, $theme-dark);
+@include themable(theme-light, $theme-light);
