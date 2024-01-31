@@ -14,12 +14,14 @@ However, the sass command does not work.
 I then follow this guide to install Sass: https://sass-lang.com/install/
 
 I read and practised the SCSS by going backwards from the articles I found. 
-wrote the simplest SCSS codes from Andrew Richards’s article to ensure my SCSS code can compile to CSS code that works with HTML files. 
-started a pet project which is a simple landing page for a consultancy company. The landing page should have a button that can toggled between 2 different themes. I used ChatGPT to quickly generate landing page templates. 
-created the SCSS file and moved the CSS codes over. 
-refactored the codes using knowledge from Fernando Rivas’s blog. 
-Created a second theme and created a button and javascript file for toggling the theme.
-I further refactored the code by using Sass map.
+1. wrote the simplest SCSS codes from Andrew Richards’s article to ensure my SCSS code can compile to CSS code that works with HTML files. 
+2. started a pet project which is a simple landing page for a consultancy company. The landing page should have a button that can toggled between 2 different themes.
+3. used ChatGPT to quickly generate a landing page template. 
+4. created the SCSS file and moved the CSS codes over. 
+5. refactored the codes using knowledge from Fernando Rivas’s blog. 
+6. created a second theme and created a button and javascript file for toggling the theme.
+7. further refactored the code by using Sass map.
+
 The project is available on GitHub: 
 https://github.com/honhaoz/coding-exercise/tree/main/scss_landing_page
 
