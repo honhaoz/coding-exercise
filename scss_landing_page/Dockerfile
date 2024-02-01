@@ -1,7 +1,7 @@
-# FROM nginx:latest
+FROM nginx:latest
 
-# WORKDIR /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
 
-# COPY . .
+COPY . .
 
 
